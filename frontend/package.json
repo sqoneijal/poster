@@ -1,0 +1,38 @@
+{
+   "name": "frontend",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "dev": "esbuild --define:process.env.NODE_ENV=\\\"development\\\" ./src/App.jsx --bundle --watch --serve=8081 --alias:~=./src --outdir=./public/bundle --loader:.svg=copy --loader:.eot=copy --loader:.png=dataurl --loader:.woff=copy --loader:.woff2=copy --loader:.ttf=copy --sourcemap --log-limit=0 --loader=jsx",
+      "build": "./esbuild.config.js",
+      "socket": "node ./src/socket.js"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "@reduxjs/toolkit": "^2.2.1",
+      "animate.css": "^4.1.1",
+      "axios": "^1.6.7",
+      "bootstrap": "^5.3.3",
+      "dompurify": "^3.0.10",
+      "lozad": "^1.16.0",
+      "moment": "^2.30.1",
+      "react": "^18.2.0",
+      "react-bootstrap": "^2.10.2",
+      "react-dom": "^18.2.0",
+      "react-loader-spinner": "^6.1.6",
+      "react-redux": "^9.1.0",
+      "react-slick": "^0.30.2",
+      "react-switch-case": "^1.5.1",
+      "sweetalert2": "^11.10.6",
+      "toastr": "^2.1.4",
+      "uid": "^2.0.2",
+      "ws": "^8.16.0"
+   },
+   "devDependencies": {
+      "crypto": "^1.0.1",
+      "esbuild": "0.20.1"
+   }
+}

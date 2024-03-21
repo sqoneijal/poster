@@ -1,0 +1,252 @@
+CRITICAL - 2024-03-06 13:50:18 --> Error: Class "App\Controllers" not found
+in APPPATH/Controllers/Login.php on line 9.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(311): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/sempakkoyak/www/poster/app/Controllers/Login.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 5 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Login', true)
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/public/index.php')
+CRITICAL - 2024-03-06 13:52:04 --> ArgumentCountError: Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFile(), 0 passed in /Users/sempakkoyak/www/poster/app/Controllers/BaseController.php on line 64 and exactly 1 expected
+in VENDORPATH/codeigniter4/framework/system/HTTP/IncomingRequest.php on line 926.
+ 1 APPPATH/Controllers/BaseController.php(64): CodeIgniter\HTTP\IncomingRequest->getFile()
+ 2 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/public/index.php')
+CRITICAL - 2024-03-06 13:52:15 --> Error: Call to undefined function App\Controllers\link_tag()
+in APPPATH/Controllers/BaseController.php on line 79.
+ 1 APPPATH/Controllers/BaseController.php(67): App\Controllers\BaseController->generateWebpackCss()
+ 2 APPPATH/Controllers/Login.php(17): App\Controllers\BaseController->template([...])
+ 3 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->index()
+ 4 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/public/index.php')
+CRITICAL - 2024-03-06 13:52:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Template.php"
+in VENDORPATH/codeigniter4/framework/system/Exceptions/FrameworkException.php on line 39.
+ 1 VENDORPATH/codeigniter4/framework/system/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template.php')
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Template', [], true)
+ 3 APPPATH/Controllers/BaseController.php(70): view('Template', [...])
+ 4 APPPATH/Controllers/Login.php(17): App\Controllers\BaseController->template([...])
+ 5 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->index()
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/public/index.php')
+CRITICAL - 2024-03-06 14:31:00 --> Error: Class "App\Models\Common" not found
+in APPPATH/Models/Login.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(311): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/sempakkoyak/www/poster/admin/app/Models/Login.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Login')
+ 4 APPPATH/Controllers/Login.php(35): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Login')
+ 5 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/admin/public/index.php')
+INFO - 2024-03-06 14:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-06 14:51:33 --> TypeError: App\Models\Login::getUserLogin(): Argument #1 ($idUsers) must be of type int, null given, called in /Users/sempakkoyak/www/poster/admin/app/Models/Login.php on line 15
+in APPPATH/Models/Login.php on line 18.
+ 1 APPPATH/Models/Login.php(15): App\Models\Login->getUserLogin(null)
+ 2 APPPATH/Controllers/Login.php(36): App\Models\Login->initPage()
+ 3 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+ 4 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/admin/public/index.php')
+INFO - 2024-03-06 14:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-06 14:51:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+#6 /Users/sempakkoyak/www/poster/admin/app/Controllers/Login.php(36): App\Models\Login->initPage()
+#7 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+#8 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/sempakkoyak/www/poster/admin/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakko...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+#5 /Users/sempakkoyak/www/poster/admin/app/Controllers/Login.php(36): App\Models\Login->initPage()
+#6 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+#7 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/sempakkoyak/www/poster/admin/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakko...')
+#11 {main}
+CRITICAL - 2024-03-06 14:51:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php on line 428.
+ 1 VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_users`
+WHERE `id` = :id:', [...], false)
+ 3 APPPATH/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+ 5 APPPATH/Controllers/Login.php(36): App\Models\Login->initPage()
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/admin/public/index.php')
+INFO - 2024-03-06 14:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-06 14:55:22 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9999 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request. in /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/sempakko...', 72)
+#1 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(72): pg_connect('host=localhost ...')
+#2 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+#7 /Users/sempakkoyak/www/poster/admin/app/Controllers/Login.php(36): App\Models\Login->initPage()
+#8 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+#9 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/sempakkoyak/www/poster/admin/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakko...')
+#13 {main}
+CRITICAL - 2024-03-06 14:55:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9999 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+in VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php on line 428.
+ 1 VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "tb_users"
+WHERE "id" = :id:', [...], false)
+ 3 APPPATH/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+ 5 APPPATH/Controllers/Login.php(36): App\Models\Login->initPage()
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/admin/public/index.php')
+INFO - 2024-03-06 14:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-06 14:55:22 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/sempakko...', 72)
+#1 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(72): pg_connect('host=localhost ...')
+#2 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+#7 /Users/sempakkoyak/www/poster/admin/app/Controllers/Login.php(36): App\Models\Login->initPage()
+#8 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+#9 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/sempakkoyak/www/poster/admin/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakko...')
+#13 {main}
+CRITICAL - 2024-03-06 14:55:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php on line 428.
+ 1 VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "tb_users"
+WHERE "id" = :id:', [...], false)
+ 3 APPPATH/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+ 5 APPPATH/Controllers/Login.php(36): App\Models\Login->initPage()
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/admin/public/index.php')
+INFO - 2024-03-06 14:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-06 14:55:46 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/sempakko...', 72)
+#1 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(72): pg_connect('host=localhost ...')
+#2 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+#7 /Users/sempakkoyak/www/poster/admin/app/Controllers/Login.php(36): App\Models\Login->initPage()
+#8 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+#9 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/sempakkoyak/www/poster/admin/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakko...')
+#13 {main}
+CRITICAL - 2024-03-06 14:55:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 9100 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php on line 428.
+ 1 VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "tb_users"
+WHERE "id" = :id:', [...], false)
+ 3 APPPATH/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+ 5 APPPATH/Controllers/Login.php(36): App\Models\Login->initPage()
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/admin/public/index.php')
+INFO - 2024-03-06 14:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-06 14:56:01 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9100 failed: FATAL:  database &quot;poster&quot; does not exist in /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/sempakko...', 72)
+#1 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(72): pg_connect('host=localhost ...')
+#2 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/sempakkoyak/www/poster/admin/app/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+#7 /Users/sempakkoyak/www/poster/admin/app/Controllers/Login.php(36): App\Models\Login->initPage()
+#8 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+#9 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/sempakkoyak/www/poster/admin/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Users/sempakkoyak/www/poster/admin/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakko...')
+#13 {main}
+CRITICAL - 2024-03-06 14:56:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 9100 failed: FATAL:  database &quot;poster&quot; does not exist
+in VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php on line 428.
+ 1 VENDORPATH/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "tb_users"
+WHERE "id" = :id:', [...], false)
+ 3 APPPATH/Models/Login.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Login.php(15): App\Models\Login->getUserLogin(0)
+ 5 APPPATH/Controllers/Login.php(36): App\Models\Login->initPage()
+ 6 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->initPage()
+ 7 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/sempakkoyak/www/poster/admin/public/index.php')
+INFO - 2024-03-06 14:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-06 14:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

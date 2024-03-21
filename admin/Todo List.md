@@ -1,0 +1,42 @@
+- Dashboard
+- Content
+  - Images
+    - list
+    - insert
+    - update
+    - delete
+    - detail
+  - Video
+    - insert
+    - update
+    - delete
+    - list
+    - detail
+  - Youtube
+    - insert
+    - update
+    - delete
+    - list
+    - detail
+  - Running Text
+    - insert
+    - update
+    - delete
+    - list
+  - Pengumuman
+    - insert
+    - update
+    - delete
+    - list
+- Screen
+  - insert
+  - update
+  - delete
+  - list
+  - detail
+- Playlist
+  - insert
+  - update
+  - delete
+  - list
+  - detail

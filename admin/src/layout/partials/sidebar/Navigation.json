@@ -1,0 +1,53 @@
+[
+   {
+      "label": "Dashboard",
+      "icon": "ki-outline ki-element-11 fs-2",
+      "pathname": "/",
+      "sub": false
+   },
+   {
+      "label": "Content",
+      "icon": "ki-outline ki-data fs-2",
+      "pathname": "/content",
+      "sub": true,
+      "child": [
+         {
+            "label": "Images",
+            "pathname": "/content/images",
+            "sub": false
+         },
+         {
+            "label": "Video",
+            "pathname": "/content/video",
+            "sub": false
+         },
+         {
+            "label": "Youtube",
+            "pathname": "/content/youtube",
+            "sub": false
+         },
+         {
+            "label": "Running Text",
+            "pathname": "/content/runningtext",
+            "sub": false
+         },
+         {
+            "label": "Pengumuman",
+            "pathname": "/content/pengumuman",
+            "sub": false
+         }
+      ]
+   },
+   {
+      "label": "Playlist",
+      "icon": "ki-outline ki-text-number fs-2",
+      "pathname": "/playlist",
+      "sub": false
+   },
+   {
+      "label": "Screen",
+      "icon": "ki-outline ki-monitor-mobile fs-2",
+      "pathname": "/screen",
+      "sub": false
+   }
+]

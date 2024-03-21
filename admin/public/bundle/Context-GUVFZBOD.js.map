@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/page/Admin/Dashboard/Context.jsx"],
+  "sourcesContent": ["import React from \"react\";\n\nconst Context = () => {\n   return <React.Fragment>Context</React.Fragment>;\n};\nexport default Context;\n"],
+  "mappings": "+CAAA,IAAAA,EAAkB,OAEZC,EAAU,IACN,EAAAC,QAAA,cAAC,EAAAA,QAAM,SAAN,KAAe,SAAO,EAE1BC,EAAQF",
+  "names": ["import_react", "Context", "React", "Context_default"]
+}

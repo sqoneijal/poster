@@ -1,0 +1,22 @@
+{
+   "name": "sempakkoyak/admin",
+   "description": "TV poster",
+   "type": "project",
+   "require": {
+      "cboden/ratchet": "^0.4.4"
+   },
+   "require-dev": {
+      "codeigniter4/appstarter": "^4.4"
+   },
+   "autoload": {
+      "psr-4": {
+         "Sempakkoyak\\Admin\\": "public/"
+      }
+   },
+   "authors": [
+      {
+         "name": "sqoneijal",
+         "email": "sqone.developer@gmail.com"
+      }
+   ]
+}

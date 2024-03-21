@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/YoutubeEmbed.jsx"],
+  "sourcesContent": ["import PropTypes from \"prop-types\";\nimport React from \"react\";\n\nconst YoutubeEmbed = ({ embedId }) => (\n   <div className=\"video-responsive\">\n      <iframe\n         src={`https://www.youtube.com/embed/${embedId}`}\n         allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n         allowFullScreen\n      />\n   </div>\n);\n\nYoutubeEmbed.propTypes = {\n   embedId: PropTypes.string.isRequired,\n};\n\nexport default YoutubeEmbed;\n"],
+  "mappings": "uFAAA,IAAAA,EAAsB,OACtBC,EAAkB,OAEZC,EAAe,CAAC,CAAE,QAAAC,CAAQ,IAC7B,EAAAC,QAAA,cAAC,OAAI,UAAU,oBACZ,EAAAA,QAAA,cAAC,UACE,IAAK,iCAAiCD,CAAO,GAC7C,MAAM,2FACN,gBAAe,GAClB,CACH,EAGHD,EAAa,UAAY,CACtB,QAAS,EAAAG,QAAU,OAAO,UAC7B,EAEA,IAAOC,EAAQJ",
+  "names": ["import_prop_types", "import_react", "YoutubeEmbed", "embedId", "React", "PropTypes", "YoutubeEmbed_default"]
+}
